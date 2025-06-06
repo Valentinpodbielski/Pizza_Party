@@ -265,8 +265,6 @@ footer {
  
 }
 
-/*--------------------------------------------------------------------------------------------------------*/
-
 @media screen and (max-width: 768px) {
 
   * {
@@ -314,9 +312,8 @@ body, html {
 
 .nav-links li a {
   color: rgb(0, 0, 0);
-  text-decoration: none;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 /* Contenido principal */
@@ -332,9 +329,9 @@ main {
 }
 
 .footer-text {
-  position: relative;
-  bottom: 120px;
-  left: 50%;
+  position: absolute;
+  bottom: 100px;
+  left: 30%;
   transform: translateX(-50%);
   font-size: 18px;
   color: #000;
@@ -409,28 +406,26 @@ main {
   margin-bottom: 20px;
 }
 
-/* Título y subtítulos */
-.titulo-container {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: auto;
-  margin: 20px;
-}
 
-.fondo {
-  background: black;
-  padding: 5px 15px;
-}
 
 .titulo {
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  gap: 5px;
+  gap: 13px;
 }
+
+.titulo-container {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .pizza {
   font-size: 40px;
@@ -440,16 +435,21 @@ main {
 
 .party {
   font-size: 30px;
+  position: relative;
   color: #e6d0be;
   font-family: Arial, sans-serif;
   letter-spacing: 1px;
+  top: 10px;
 }
+
+
+
 
 .subtitulo {
   position: absolute;
-  top: 120px;
-  left: 15px;
-  color: #f0f0f0;
+  top: 140px;
+  left: 35%;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   z-index: 2;
@@ -521,8 +521,8 @@ footer {
 }
 
 .whatsapp-button2 {
-  bottom: 17px;
-}
+  bottom: 5px;
 
+}
 
 }
