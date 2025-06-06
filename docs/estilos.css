@@ -1,0 +1,275 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Rock Salt', cursive;
+}
+
+/* VIDEO de fondo */
+.video-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-fondo video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Barra de navegación */
+.Barra {
+  padding: 15px 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  justify-content: flex-end;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Contenido principal */
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  text-shadow: 2px 2px 8px black;
+  
+}
+.footer-text {
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+.hero-content h1 {
+  font-size: 4em;
+  line-height: 1.6;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  
+}
+
+
+.Seccion_2 {
+  width: 100%; /* Ocupa el 100% del ancho del viewport */
+  height: 100vh; /* Ocupa el 100% del alto del viewport (vh = viewport height) */
+  background-color: #f5e5da; /* Un color de fondo diferente para distinguirla */
+  display: flex; /* Usamos flexbox para posicionar el cuadrado y el contenido */
+  position: relative; /* Importante si en algún momento necesitas posicionar elementos hijos de forma absoluta dentro de esta sección */
+  border-radius: 80px;
+  margin-bottom: 50px; /* Espacio debajo de toda la sección */
+}
+
+
+
+
+
+.cuadrado-negro4 {
+  width: 100%; 
+  height: 100vh; 
+  background-image: url("imagenes/fondo_roble.jpg"); /* Ruta de la imagen */
+  background-size: cover; /* Hace que la imagen cubra todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que se repita */
+  border-radius: 60px;
+  
+  position: absolute; 
+  z-index: 50; 
+
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.cuadrado-negro4 img {
+
+  width: 33%; /* Menor al 30% para permitir espacio sin romper layout */
+  height: auto; /* Mantiene proporción */
+  object-fit: contain;
+  
+}
+
+
+.cuadrado-negro3 {
+  width: 50vw; /* Ocupa el 50% del ancho del viewport (el ancho de la ventana) */
+  height: 100%; /* ¡Cambio clave! Ocupa el 100% de la altura de su contenedor padre (.Seccion_2) */
+  background-color: black; 
+  text-align: center; /* Alinia el texto en el centro*/
+  padding: 40px;
+  border-radius: 80px;
+  
+}
+
+.cuadrado-negro3 h2 {
+  font-size: 3em;
+  line-height: 1.8; /*Espacio entre lineas*/
+  color: white;
+  margin-bottom: 35px; 
+  
+}
+.cuadrado-negro3 p {
+  font-size: 1.8em;
+  line-height: 1.2; /*Espacio entre lineas*/
+  color: white;
+  font-family: Arial, sans-serif;
+  margin-bottom: 35px; /*Espacio entres parrafos*/
+}
+
+
+
+
+
+.titulo-container {
+     
+      top: 10px;         
+      left: 100px;         
+      position: absolute;
+      width: max-content;
+      margin: 35px auto;
+    }
+.fondo {
+  background: black;
+  padding: 5px 30px;
+}
+.titulo {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.pizza {
+  font-size: 85px; 
+  font-family: 'Georgia', serif;
+  color: orange;
+}
+.party {
+  font-size: 70px; 
+  font-family: Arial, sans-serif;
+  color: #e6d0be;
+  letter-spacing: 2px;
+}
+
+
+.subtitulo {
+  position: absolute;
+  top: 20px;
+  left: 430px; 
+  color: #f0f0f0;
+  font-size: 19px; /*Tamaño letra*/
+  font-weight: bold;
+  z-index: 2;
+}
+
+.cuadrado-negro {
+  width: 150px;         /* Define el ancho del cuadrado */
+  height: 110px;        /* Define la altura del cuadrado. Al ser iguales, es un cuadrado. */
+  background-color: black; /* Le da el color de fondo negro */
+  transform: skewX(20deg); /* para anular la inclinación del fondo */
+  position: absolute;
+  top: 25px; 
+  left: 50px; 
+}
+
+.cuadrado-negro2 {
+  width: 150px;         /* Define el ancho del cuadrado */
+  height: 110px;        /* Define la altura del cuadrado. Al ser iguales, es un cuadrado. */
+  background-color: black; /* Le da el color de fondo negro */
+  transform: skewX(20deg); /* para anular la inclinación del fondo */
+  position: absolute;
+  top: 65px; /*Posicion en Y*/
+  left: 580px; /*Posicion en X*/
+}
+
+ 
+footer {
+  position: relative; /* para posicionar elementos absolutos dentro */
+  width: 100%; /* Ocupa el 100% del ancho de la ventana */
+  background-color: #000000; /* Un color de fondo oscuro para el footer, puedes cambiarlo */
+  color: white; /* Color del texto del footer */
+  padding: 20px 0; /* Espacio interno arriba y abajo, sin padding lateral para que el contenido se alinee con el borde */
+  text-align: center; /* Centra el texto dentro del footer */
+  z-index: 100; /* Asegura que esté por encima de otros elementos, si hay scroll */
+}
+
+.footer-content {
+  display: flex; /* Convierte el contenedor en un flexbox */
+  justify-content: center; /* Centra los ítems horizontalmente */
+  align-items: center; /* Centra los ítems verticalmente (si tuvieran diferentes alturas) */
+  gap: 50px; /* Espacio entre cada ítem del footer */
+  flex-wrap: wrap; /* Permite que los ítems salten a la siguiente línea en pantallas pequeñas */
+}
+
+.footer-item {
+  font-size: 23px; /* Tamaño de la letra de cada ítem */
+  margin: 5px 0; /* Un pequeño margen vertical para separación si se envuelven */
+  font-family: Arial, sans-serif;
+}
+
+.galeria-fotos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  background-color: #f2f2f2;
+  padding: 40px 20px;
+}
+
+.galeria-fotos img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.galeria-fotos img:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+.whatsapp-button {
+  position: absolute;
+  bottom: 90px;  /*Distancia de la derecha*/
+  right: 50px;   /*Distancia de abajo*/
+}
+
+.whatsapp-button2{
+  position: absolute;
+  bottom: 5px;   /*Distancia de la derecha*/
+  right: 50px;   /*Distancia de abajo*/
+ 
+}
+
