@@ -306,8 +306,7 @@ body, html {
   list-style: none;
   display: flex;
   gap: 20px;
-  justify-content: flex-end;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .nav-links li a {
@@ -318,7 +317,7 @@ body, html {
 
 /* Contenido principal */
 main {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -447,7 +446,7 @@ main {
 
 .subtitulo {
   position: absolute;
-  top: 140px;
+  top: 54px;
   left: 35%;
   color: #ffffff;
   font-size: 14px;
@@ -455,9 +454,23 @@ main {
   z-index: 2;
 }
 
-.cuadrado-negro,
+.cuadrado-negro{
+  width: 70px;         /* Define el ancho del cuadrado */
+  height: 60px;        /* Define la altura del cuadrado. Al ser iguales, es un cuadrado. */
+  background-color: black; /* Le da el color de fondo negro */
+  transform: skewX(20deg); /* para anular la inclinación del fondo */
+  position: absolute;
+  top: 70px; 
+  left: 70px; 
+}
 .cuadrado-negro2 {
-  display: none;
+  width: 70px;         /* Define el ancho del cuadrado */
+  height: 60px;        /* Define la altura del cuadrado. Al ser iguales, es un cuadrado. */
+  background-color: black; /* Le da el color de fondo negro */
+  transform: skewX(20deg); /* para anular la inclinación del fondo */
+  position: absolute;
+  top: 95px; 
+  left: 348px;
 }
 
 /* Footer */
