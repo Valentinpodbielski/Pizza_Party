@@ -465,7 +465,7 @@ main {
 }
 .cuadrado-negro2 {
   width: 70px;         /* Define el ancho del cuadrado */
-  height: 150px;        /* Define la altura del cuadrado. Al ser iguales, es un cuadrado. */
+  height: 60px;        /* Define la altura del cuadrado. Al ser iguales, es un cuadrado. */
   background-color: black; /* Le da el color de fondo negro */
   transform: skewX(20deg); /* para anular la inclinación del fondo */
   position: absolute;
