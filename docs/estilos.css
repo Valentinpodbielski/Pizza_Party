@@ -454,24 +454,6 @@ main {
   z-index: 2;
 }
 
-.cuadrado-negro{
-  width: 70px;         /* Define el ancho del cuadrado */
-  height: 60px;        /* Define la altura del cuadrado. Al ser iguales, es un cuadrado. */
-  background-color: black; /* Le da el color de fondo negro */
-  transform: skewX(20deg); /* para anular la inclinación del fondo */
-  position: absolute;
-  top: 70px; 
-  left: 60px; 
-}
-.cuadrado-negro2 {
-  width: 70px;         /* Define el ancho del cuadrado */
-  height: 60px;        /* Define la altura del cuadrado. Al ser iguales, es un cuadrado. */
-  background-color: black; /* Le da el color de fondo negro */
-  transform: skewX(20deg); /* para anular la inclinación del fondo */
-  position: absolute;
-  top: 95px; 
-  left: 300px;
-}
 
 /* Footer */
 footer {
@@ -537,5 +519,25 @@ footer {
   bottom: 5px;
 
 }
+
+  .cuadrado-negro{
+  width: 70px;         /* Define el ancho del cuadrado */
+  height: 60px;        /* Define la altura del cuadrado. Al ser iguales, es un cuadrado. */
+  background-color: black; /* Le da el color de fondo negro */
+  transform: skewX(20deg); /* para anular la inclinación del fondo */
+  position: absolute;
+  top: 70px; 
+  left: 50px; 
+}
+.cuadrado-negro2 {
+  width: 70px;         /* Define el ancho del cuadrado */
+  height: 60px;        /* Define la altura del cuadrado. Al ser iguales, es un cuadrado. */
+  background-color: black; /* Le da el color de fondo negro */
+  transform: skewX(20deg); /* para anular la inclinación del fondo */
+  position: absolute;
+  top: 95px; 
+  left: 310px;
+}
+
 
 }
