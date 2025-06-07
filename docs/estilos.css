@@ -160,6 +160,7 @@ main {
   display: flex;
   align-items: center;
   gap: 10px;
+  position: relative;
 }
 .pizza {
   font-size: 85px; 
@@ -185,23 +186,23 @@ main {
 }
 
 .cuadrado-negro {
-  width: 150px;         /* Define el ancho del cuadrado */
-  height: 110px;        /* Define la altura del cuadrado. Al ser iguales, es un cuadrado. */
-  background-color: black; /* Le da el color de fondo negro */
-  transform: skewX(20deg); /* para anular la inclinación del fondo */
+  width: 150px;         
+  height: 110px;        
+  background-color: black; 
+  transform: skewX(20deg); 
   position: absolute;
-  top: 25px; 
-  left: 50px; 
+  top: -25px; 
+  left: -40px; 
 }
 
 .cuadrado-negro2 {
-  width: 150px;         /* Define el ancho del cuadrado */
-  height: 110px;        /* Define la altura del cuadrado. Al ser iguales, es un cuadrado. */
-  background-color: black; /* Le da el color de fondo negro */
-  transform: skewX(20deg); /* para anular la inclinación del fondo */
+  width: 150px;         
+  height: 110px;        
+  background-color: black; 
+  transform: skewX(20deg); 
   position: absolute;
-  top: 65px; /*Posicion en Y*/
-  left: 580px; /*Posicion en X*/
+  top: 25px; 
+  left: 480px; 
 }
 
  
@@ -265,7 +266,7 @@ footer {
  
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
 
   * {
   margin: 0;
@@ -409,13 +410,6 @@ main {
 
 
 
-.titulo {
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  display: flex;
-  align-items: flex-start;
-  gap: 13px;
-}
 
 .titulo-container {
   position: absolute;
@@ -456,24 +450,43 @@ main {
   z-index: 2;
 }
 
+
+
+.titulo {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  position: relative;
+}
+
+.fondo{
+  display: inline-block;
+  position: relative;
+}
+
 .cuadrado-negro{
-  width: 70px;         /* Define el ancho del cuadrado */
-  height: 60px;        /* Define la altura del cuadrado. Al ser iguales, es un cuadrado. */
-  background-color: black; /* Le da el color de fondo negro */
-  transform: skewX(20deg); /* para anular la inclinación del fondo */
+  width: 70px;        
+  height: 60px;
+  background-color: black; 
+  transform: skewX(20deg); 
   position: absolute;
-  top: 70px; 
-  left: 30px; 
+  top: -13px; 
+  left: -25px;
+
 }
-.cuadrado-negro2 {
-  width: 70px;         /* Define el ancho del cuadrado */
-  height: 60px;        /* Define la altura del cuadrado. Al ser iguales, es un cuadrado. */
-  background-color: black; /* Le da el color de fondo negro */
-  transform: skewX(20deg); /* para anular la inclinación del fondo */
+.cuadrado-negro2{
+  width: 70px;        
+  height: 60px;
+  background-color: black; 
+  transform: skewX(20deg); 
   position: absolute;
-  top: 95px; 
-  left: 310px;
+  top: 8px; 
+  left: 85%;
+  
 }
+
 
 /* Footer */
 footer {
