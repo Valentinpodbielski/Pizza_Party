@@ -185,7 +185,25 @@ main {
   z-index: 2;
 }
 
+.cuadrado-negro {
+  width: 150px;         
+  height: 110px;        
+  background-color: black; 
+  transform: skewX(20deg); 
+  position: absolute;
+  top: -25px; 
+  left: -40px; 
+}
 
+.cuadrado-negro2 {
+  width: 150px;         
+  height: 110px;        
+  background-color: black; 
+  transform: skewX(20deg); 
+  position: absolute;
+  top: 25px; 
+  left: 480px; 
+}
 
  
 footer {
@@ -411,12 +429,12 @@ main {
 }
 
 .party {
-  font-size: 40px;
+  font-size: 30px;
   position: relative;
   color: #e6d0be;
   font-family: Arial, sans-serif;
   letter-spacing: 1px;
-  
+  top: 10px;
 }
 
 
@@ -448,7 +466,26 @@ main {
   position: relative;
 }
 
+.cuadrado-negro{
+  width: 70px;        
+  height: 60px;
+  background-color: black; 
+  transform: skewX(20deg); 
+  position: absolute;
+  top: -13px; 
+  left: -25px;
 
+}
+.cuadrado-negro2{
+  width: 70px;        
+  height: 60px;
+  background-color: black; 
+  transform: skewX(20deg); 
+  position: absolute;
+  top: 8px; 
+  left: 85%;
+  
+}
 
 
 /* Footer */
