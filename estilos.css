@@ -319,6 +319,7 @@ body, html {
 main {
   height: 90vh;
   min-height: 700px;
+  min-width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -351,6 +352,7 @@ main {
 .Seccion_2 {
   width: 100%;
   height: auto;
+  min-width: 400px;
   background-color: #f5e5da;
   display: flex;
   flex-direction: column;
@@ -434,7 +436,7 @@ main {
   color: #e6d0be;
   font-family: Arial, sans-serif;
   letter-spacing: 1px;
-  top: 2px;
+  top: 3px;
 }
 
 
@@ -473,7 +475,7 @@ main {
   transform: skewX(20deg); 
   position: absolute;
   top: -13px; 
-  left: -25px;
+  left: -21px;
 
 }
 .cuadrado-negro2{
@@ -497,6 +499,7 @@ footer {
   padding: 20px 10px;
   text-align: center;
   z-index: 100;
+  min-width: 400px;
 }
 
 .footer-content {
